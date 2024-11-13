@@ -5,7 +5,7 @@ from firebase_admin import credentials, firestore
 import time
 
 # Initialize Firebase Admin SDK
-cred = credentials.Certificate('supply-chain-in-agriculture-firebase-adminsdk-zowmd-99626f5c62.json')
+cred = credentials.Certificate('C:\\Users\\Admin\\My programs\\Major_project\\supply-chain-in-agriculture-firebase-adminsdk-zowmd-404696fc4a.json')
 firebase_admin.initialize_app(cred)
 db = firestore.client()
 
@@ -47,7 +47,7 @@ def send_data_to_firebase(data):
             'heat_index': float(heat_index),
             'firebase_timestamp': firestore.SERVER_TIMESTAMP
         }
-        db.collection('mango_transport_data').add(data_to_send)
+        db.collection('real_time_data').add(data_to_send)
         print(f"Data sent to Firebase: Temp: {temperature}°C, Humidity: {humidity}%, Heat Index: {heat_index}°C")
     except Exception as e:
         print("Failed to send data:", e)
