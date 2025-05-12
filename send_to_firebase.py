@@ -5,7 +5,7 @@ from firebase_admin import credentials, firestore
 import time
 
 # Initialize Firebase Admin SDK
-cred = credentials.Certificate('C:\\Users\\Admin\\My programs\\Major_project\\supply-chain-in-agriculture-firebase-adminsdk-zowmd-404696fc4a.json')
+cred = credentials.Certificate('C:\\Users\\Admin\\My programs\\Major_project\\supply-chain-in-agricult-5bc11-firebase-adminsdk-fbsvc-10f2ea41c8.json')
 firebase_admin.initialize_app(cred)
 db = firestore.client()
 
