@@ -88,7 +88,6 @@
 #     alert_doc.set(alert_data)
 #     print(f"Temperature Alert Generated: {alert_data['Alert Message']}")
 
-# # Iterate over each row in the DataFrame and send it to Firebase
 # # df.iterrows(): This loop iterates over each row in the DataFrame, sending each row's data to Firestore by calling send_to_firebase(row)
 # for index, row in df.iterrows():
 #     send_to_firebase(row)
